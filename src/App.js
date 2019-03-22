@@ -13,7 +13,7 @@ class App extends Component {
 
           </p>
           <h1>
-            Xin Jin
+            Plant money
           </h1>
           <a
             className="App-link"

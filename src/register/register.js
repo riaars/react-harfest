@@ -1,5 +1,8 @@
 import React from 'react';
-import './register.css';
+import "./register.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebookF} from '@fortawesome/free-brands-svg-icons' 
+import Button from '../components/button/button';
 
 const Register = props => {
   return (
@@ -12,7 +15,7 @@ const Register = props => {
           <br />
           <input
             type="text"
-            className="form-control"
+            className="form-control email"
             id="email"
             placeholder="Full Name"
           />
@@ -54,8 +57,18 @@ const Register = props => {
             placeholder="Re-Password"
           />
         </div>
-        <button type="submit" class="btn btn-warning">Register</button>
+        <button type="submit" className="btn btn-warning">Register</button>
       </form>
+      <br/>
+      OR
+      <br/>
+      <br/>
+      <Button
+        className="btn btn-primary btn-auth btn-facebook"
+        type="submit"
+        icon={<FontAwesomeIcon icon={faFacebookF} />}
+        text="  Register with Facebook"
+      />
       </div>
     </React.Fragment>
   );

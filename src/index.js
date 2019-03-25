@@ -11,6 +11,8 @@ import Profile from './profile/profile';
 import Forgot from './forgotpassword/forgotpassword';
 import * as ROUTES from './constants/routes';
 import {BrowserRouter, Link, Route, Switch} from 'react-router-dom';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
 
 
 const TestComponent = props => {

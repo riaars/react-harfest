@@ -1,3 +1,9 @@
+.html,
+body{
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
 .title {
   width: 112px;
   height: 15px;
@@ -6,4 +12,8 @@
   font-weight: bold;
   text-align: center;
   color: #4a4a4a;
+}
+
+.form-control{
+  width: 100px
 }

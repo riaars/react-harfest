@@ -12,27 +12,25 @@ import Forgot from './forgotpassword/forgotpassword';
 import * as ROUTES from './constants/routes';
 import {BrowserRouter, Link, Route, Switch} from 'react-router-dom';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-
-
-
+import Navbar from './components/navbar/navbar'
 const TestComponent = props => {
   return (
     <React.Fragment>
-       <h3>This is test page routes</h3>
+      <h3>This is test page routes</h3>
       <Link to={ROUTES.REGISTER}>Register page</Link>
-      <br/>
+      <br />
       <Link to={ROUTES.LOGIN}>Login page</Link>
-      <br/>
+      <br />
       <Link to={ROUTES.PROFILE}>Account page</Link>
-      <br/>
+      <br />
       <Link to={ROUTES.FORGOT_PASSWORD}>Forgot Password page</Link>
-      <br/>
+      <br />
       <Link to={ROUTES.HOMEPAGE}>Home page</Link>
-      <br/>
+      <br />
       <Link to={ROUTES.PROJECT_DETAIL}>Project Detail page</Link>
-      <br/>
+      <br />
       <Link to={ROUTES.ORDER_HISTORY}>Order History page</Link>
-      <br/>
+      <br />
     </React.Fragment>
   );
 };
@@ -40,24 +38,31 @@ const TestComponent = props => {
 const AppBase = () => (
   <React.Fragment>
     <Switch>
-        <Route exact path={ROUTES.LANDING} render={() => <TestComponent />} />
-        <Route exact path={ROUTES.REGISTER} render={() => <Register />} />
-        <Route exact path={ROUTES.LOGIN} render={() => <Login />} />
-        <Route exact path={ROUTES.PROFILE} render={() => <Profile />} />
-        <Route exact path={ROUTES.FORGOT_PASSWORD} render={() => <Forgot/>} />
-        <Route exact path={ROUTES.HOMEPAGE} render={() => <HomePage />} />
-        <Route exact path={ROUTES.PROJECT_DETAIL} render={() => <Detail/>} />
-        <Route exact path={ROUTES.ORDER_HISTORY} render={() => <History/>} />
-    
+      <Route
+        exact
+        path={ROUTES.LANDING}
+        render={() => (
+            <TestComponent />
+        )}
+      />
+      <Route exact path={ROUTES.REGISTER} render={() => <Register />} />
+      <Route exact path={ROUTES.LOGIN} render={() => <Login />} />
+      <Route exact path={ROUTES.PROFILE} render={() => <Profile />} />
+      <Route exact path={ROUTES.FORGOT_PASSWORD} render={() => <Forgot />} />
+      <Route exact path={ROUTES.HOMEPAGE} render={() => <HomePage />} />
+      <Route exact path={ROUTES.PROJECT_DETAIL} render={() => <Detail />} />
+      <Route exact path={ROUTES.ORDER_HISTORY} render={() => <History />} />
     </Switch>
   </React.Fragment>
 );
 
 ReactDOM.render(
-<BrowserRouter>
+  <BrowserRouter>
+    <Navbar/>
     <AppBase />
-</BrowserRouter>,
-document.getElementById('root'));
+  </BrowserRouter>,
+  document.getElementById('root')
+);
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

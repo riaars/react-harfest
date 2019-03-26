@@ -3,12 +3,14 @@ import "./register.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookF} from '@fortawesome/free-brands-svg-icons' 
 import Button from '../components/button/button';
+import Navbar from "../components/navbar/navbar";
 
 const Register = props => {
   return (
     <React.Fragment>
       <div className ="register-container"> 
       <h2> Register Page</h2>
+      <br/>
       <form>
       <div>
           <label for="email">Full Name</label>

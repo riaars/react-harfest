@@ -16,7 +16,7 @@ import Navbar from './components/navbar/navbar'
 const TestComponent = props => {
   return (
     <React.Fragment>
-      <h3>This is test page routes</h3>
+     
       <Link to={ROUTES.REGISTER}>Register page</Link>
       <br />
       <Link to={ROUTES.LOGIN}>Login page</Link>

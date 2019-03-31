@@ -2,14 +2,17 @@ import React from 'react';
 import './navbar.css';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faUserCircle} from '@fortawesome/free-solid-svg-icons';
-import {faHistory} from '@fortawesome/free-solid-svg-icons';
-import {faCartPlus} from '@fortawesome/free-solid-svg-icons';
+import {Link} from 'react-router-dom';
+import * as ROUTES from '../../constants/routes';
 
 const Navbar = props => {
   return (
     <React.Fragment>
       <div className="navbar">
-        <div className="brand-logo"> PlantMoney</div>
+        <Link className="brand-logo" to={ROUTES.LANDING}>
+            PlantMoney
+        </Link>
+       
         <div>
             <FontAwesomeIcon className="profile-icon" icon={faUserCircle} />
         </div>

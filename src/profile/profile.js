@@ -1,9 +1,13 @@
 import React from 'react';
+import './profile.css';
 
 const Profile = props => {
   return (
     <React.Fragment>
-      <h1> Profile Page</h1>
+      <div className="profile-container">
+        <h2> Profile Page</h2>
+        
+      </div>
     </React.Fragment>
   );
 };

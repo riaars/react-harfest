@@ -1,4 +1,35 @@
-.profile-container{
-    margin-left:400px;
-    margin-right: 400px;
+.profile-container {
+  margin-left: 400px;
+  margin-right: 400px;
+  padding-top:30px;
 }
+
+.profile-picture {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border-width: 1px;
+  border-color: grey;
+  margin-bottom: 50px;
+  border: solid 0.5px rgba(155, 155, 155, 0.3);
+}
+
+.btn-edit-profile {
+  width: 100px;
+  height: 35px;
+  border-radius: 19px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  background-color: rgba(211, 163, 33, 0.7);
+  font-size: 12px;
+  text-align: center;
+  display: flex;
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  justify-content: center;
+  text-decoration: none;
+  align-items: center;
+  color: white;
+}
+
+

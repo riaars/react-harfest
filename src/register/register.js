@@ -69,6 +69,13 @@ const Register = props => {
         icon={<FontAwesomeIcon icon={faFacebookF} />}
         text="  Register with Facebook"
       />
+
+      <div>
+        Have an account?
+      </div>
+      <div>
+        Sign in here
+      </div>
       </div>
     </React.Fragment>
   );

@@ -6,3 +6,5 @@ export const PROFILE = '/profile';
 export const HOMEPAGE = '/homepage';
 export const PROJECT_DETAIL = '/detail';
 export const ORDER_HISTORY ='/history';
+export const CART ='/cart';
+export const SUMMARY ='/payment_summary';

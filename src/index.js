@@ -10,6 +10,8 @@ import Detail from './project_detail/project_detail';
 import Profile from './profile/profile';
 import Forgot from './forgotpassword/forgotpassword';
 import Transactionlistf from './transactionlistf/transactionlistf';
+import Cart from './cart/cart'
+import Summary from './payment_summary/payment_summary'
 import * as ROUTES from './constants/routes';
 import {BrowserRouter, Link, Route, Switch} from 'react-router-dom';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
@@ -32,7 +34,12 @@ const TestComponent = props => {
       <br />
       <Link to={ROUTES.ORDER_HISTORY}>Order History page</Link>
       <br />
+
       <Link to={ROUTES.TRANSACTION_LIST_FARMER}>Transaction List page (farmer)</Link>
+
+      <Link to={ROUTES.CART}>Cart</Link>
+      <br />
+      <Link to={ROUTES.SUMMARY}>Payment Summary</Link>
       <br />
     </React.Fragment>
   );
@@ -56,6 +63,9 @@ const AppBase = () => (
       <Route exact path={ROUTES.PROJECT_DETAIL} render={() => <Detail />} />
       <Route exact path={ROUTES.ORDER_HISTORY} render={() => <History />} />
       <Route exact path={ROUTES.TRANSACTION_LIST_FARMER} render={() => <Transactionlistf />} />
+
+      <Route exact path={ROUTES.CART} render={() => <Cart />} />
+      <Route exact path={ROUTES.SUMMARY} render={() => <Summary />} />
     </Switch>
   </React.Fragment>
 );

@@ -1,7 +1,7 @@
 import React from 'react';
 import './navbar.css';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faUserCircle} from '@fortawesome/free-solid-svg-icons';
+import {faUserCircle, faShoppingCart} from '@fortawesome/free-solid-svg-icons';
 import {Link} from 'react-router-dom';
 import * as ROUTES from '../../constants/routes';
 
@@ -14,6 +14,7 @@ const Navbar = props => {
         </Link>
        
         <div>
+            <FontAwesomeIcon className="cart-icon" icon={faShoppingCart} />
             <FontAwesomeIcon className="profile-icon" icon={faUserCircle} />
         </div>
       </div>

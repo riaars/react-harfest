@@ -1,32 +1,22 @@
-
-
-.navbar {
-  width: 1440px;
-  height: 56px;
-
-  box-shadow: 7px 4px 11px 0 rgba(155, 155, 155, 0.2);
-  background-color: #ffffff;
-}
-
 .brand-logo {
   width: 206px;
   height: 31px;
-  padding-left:100px;
+  padding-left: 100px;
   font-family: Monaco;
   font-size: 25px;
   color: #e0be63;
-  text-decoration-color:  #e0be63;
+  text-decoration-color: #e0be63;
   text-decoration: none;
 }
 
-.profile-icon{
-    font-size: 25px;
-    color:  #e0be63;
-    margin-right:100px;
+.profile-icon {
+  font-size: 25px;
+  color: #e0be63;
+  margin-right: 100px;
 }
 
-.cart-icon{
+.cart-icon {
   font-size: 25px;
-  color:  #e0be63;
-  margin-right:25px;
+  color: #e0be63;
+  margin-right: 25px;
 }

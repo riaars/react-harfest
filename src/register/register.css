@@ -1,12 +1,23 @@
-.html,
-body{
-padding-left: 0px;
-padding-right: 0px;
+.register-container {
+  padding-top: 100px;
 }
 
-.register-container{
-  background-color:white;
-  padding-left: 400px;
-  padding-right: 400px;
-  padding-top:30px;
+@media screen and (max-width: 760px) {
+  .register-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .register-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+  }
+}
+
+.white {
+  color: white;
+  background-color: #e0be63;
 }

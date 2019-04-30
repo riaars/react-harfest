@@ -1,12 +1,23 @@
-.profile-container {
-  margin-left: 400px;
-  margin-right: 400px;
-  padding-top:30px;
+@media screen and (max-width: 760px) {
+  .profile-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .profile-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+  }
 }
 
 .profile-picture {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 50%;
   border-width: 1px;
   border-color: grey;
@@ -31,5 +42,3 @@
   align-items: center;
   color: white;
 }
-
-

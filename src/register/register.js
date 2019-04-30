@@ -15,7 +15,7 @@ const Register = props => {
   return (
     <React.Fragment>
       <div className="register-container">
-        <h3> Start Using PlantMoney</h3>
+        <h2 className="center-item"> Start Using PlantMoney</h2>
         <br />
         <form>
           <div className="form-group">
@@ -39,7 +39,7 @@ const Register = props => {
               type="number"
               className="form-control"
               id="noHp"
-              placeholder="+46"
+              placeholder="Phone Number"
             />
           </div>
           <div class="form-group">
@@ -58,21 +58,24 @@ const Register = props => {
               placeholder="Re-Password"
             />
           </div>
-          <button type="submit" className="btn btn-warning">
-            Register
-          </button>
+          <br />
+          <div className="center-item">
+            <button className="btn-style">Register</button>
+          </div>
         </form>
-        <br />
-        OR
-        <br />
-        <br />
-        <Button
-          className="btn btn-primary btn-auth btn-facebook"
-          type="submit"
-          icon={<FontAwesomeIcon icon={faFacebookF} />}
-          text="  Register with Facebook"
-        />
-        <SignInLink />
+        <div className="center-item">
+          <br />
+          OR
+          <br />
+          <br />
+          <Button
+            className="btn btn-primary btn-auth btn-facebook"
+            type="submit"
+            icon={<FontAwesomeIcon icon={faFacebookF} />}
+            text="  Register with Facebook"
+          />
+          <SignInLink />
+        </div>
       </div>
     </React.Fragment>
   );

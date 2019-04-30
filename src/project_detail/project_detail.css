@@ -1,61 +1,60 @@
-.title{
-    width: 281px;
-    height: 25px;
-    font-family: CorsivaHebrew;
-    font-size: 20px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #e0be63;
-    padding-left: 71px;
+.title {
+  width: 281px;
+  height: 25px;
+  font-family: CorsivaHebrew;
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #e0be63;
+  padding-left: 71px;
 }
 
-.imagez{
-    width: 1366px;
-    height: 424px;
-  
+.imagez {
+  width: 1366px;
+  height: 424px;
 }
 
-.btn_request{
-    height: 35px;
-    color: white;
-    width: 144px;
-    border-radius: 19px;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-    background-color: rgba(211, 163, 33, 0.7);
-    margin-right: 2cm;
+.btn_request {
+  height: 35px;
+  color: white;
+  width: 144px;
+  border-radius: 19px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  background-color: rgba(211, 163, 33, 0.7);
+  margin-right: 2cm;
+  padding: 10px;
 }
-.location{
-    width: 30px;
-    height: 30px;
-    margin-left: 71px;
+.location {
+  width: 30px;
+  height: 30px;
+  margin-left: 71px;
 }
-.duration{
-    width: 30px;
-    height: 30px;
-    margin-left: 71px;
+.duration {
+  width: 30px;
+  height: 30px;
+  margin-left: 71px;
 }
-.return{
-    width: 30px;
-    height: 30px;
-    margin-left: 71px;
+.return {
+  width: 30px;
+  height: 30px;
+  margin-left: 71px;
 }
 .text {
-    display:inline-block;
-    width: 376px;
-    height: 20px;
-    font-family: AvenirNext;
-    text-indent: 0.5cm;
-    color:grey;
+  display: inline-block;
+  width: 376px;
+  height: 20px;
+  font-family: AvenirNext;
+  text-indent: 0.5cm;
+  color: grey;
 }
 .description {
-    width: 1024;
-    font-family: AvenirNext;
-    color:grey;
-    text-align: justify;
-    padding-left: 71px;
-    padding-right: 71px;
-
+  width: 1024;
+  font-family: AvenirNext;
+  color: grey;
+  text-align: justify;
+  padding-left: 71px;
+  padding-right: 71px;
 }

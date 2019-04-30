@@ -1,6 +1,5 @@
 import React from 'react';
 import './forgotpassword.css';
-import Button from '../components/button/button';
 
 const Forgot = props => {
   return (

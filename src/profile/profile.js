@@ -10,6 +10,7 @@ const Profile = props => (
     <div className="profile-container">
       <h2>My Profile</h2>
       <img
+        alt="profile"
         className="profile-picture"
         src="https://static.thenounproject.com/png/538846-200.png"
       />

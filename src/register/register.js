@@ -3,7 +3,6 @@ import './register.css';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faFacebookF} from '@fortawesome/free-brands-svg-icons';
 import Button from '../components/button/button';
-import Navbar from '../components/navbar/navbar';
 import * as ROUTES from '../constants/routes';
 import {Link} from 'react-router-dom';
 const Register = props => {

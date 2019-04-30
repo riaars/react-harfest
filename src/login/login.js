@@ -9,13 +9,13 @@ import {Link} from 'react-router-dom';
 const Login = props => {
   const SignUpLink = () => (
     <p>
-      Does not have an account? <Link to={ROUTES.REGISTER}>Register here</Link>
+      Do not have an account? <Link to={ROUTES.REGISTER}>Register here</Link>
     </p>
   );
   return (
     <React.Fragment>
       <div className="login-container">
-        <h2> Welcome back!</h2>
+        <h2 className="center-item"> Welcome back!</h2>
         <br />
         <form>
           <div class="form-group">
@@ -36,9 +36,10 @@ const Login = props => {
             />
           </div>
 
-          <button type="submit" className="btn btn-warning">
-            Login
-          </button>
+          <br />
+          <div className="center-item">
+            <button className="btn-style">Login</button>
+          </div>
         </form>
         <div className="center-item">
           <br />

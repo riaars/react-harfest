@@ -1,119 +1,119 @@
 .main-div {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0px 10px;
-    max-width: 1200px;
-    margin: 0 auto;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: center;
 }
-.left-content{ 
-    flex-basis: 59%;
+.left-content {
+  flex-basis: 59%;
 }
-.right-content{
-    flex-basis: 40%;
+.right-content {
+  flex-basis: 40%;
 }
-.pic{
-    width: 20%;
-    height: 100px;
-    padding: 5px
+.pic {
+  width: 20%;
+  height: 100px;
+  padding: 5px;
 }
-.card{ 
-    display: flex; 
-    padding: 10px 10px; 
-    margin: 5px;
-    box-shadow: 0px 0px 5px 1px #c1b9b1b0;
-    border-bottom: 1px solid lightgray;
-    min-width: 400px;
+.card {
+  display: flex;
+  padding: 10px 10px;
+  margin: 5px;
+  box-shadow: 0px 0px 5px 1px #c1b9b1b0;
+  border-bottom: 1px solid lightgray;
+  min-width: 400px;
 }
-.card>div{
-    padding: 5px
+.card > div {
+  padding: 5px;
 }
-.card>div:nth-child(2) {
-    flex-grow: 1;
+.card > div:nth-child(2) {
+  flex-grow: 1;
 }
-.card>div:nth-child(3) {
-    padding: 0px 20px;
-    align-self: center;
-    font-size: 15px;
-    font-weight: 500;
-    color: grey
+.card > div:nth-child(3) {
+  padding: 0px 20px;
+  align-self: center;
+  font-size: 15px;
+  font-weight: 500;
+  color: grey;
 }
 .quantity {
-    display: flex; 
-    flex-basis: 80%; 
-    padding: 0px 10px;
+  display: flex;
+  flex-basis: 80%;
+  padding: 0px 10px;
 }
-.quantity>div {
-    width: 30px;
-    height: 25px;
-    color: grey;
-    text-align: center;
+.quantity > div {
+  width: 30px;
+  height: 25px;
+  color: grey;
+  text-align: center;
 }
-.quantity>div:nth-child(1):hover{
-    background-color: lightgrey;
-    color: white;
-    cursor: pointer;
+.quantity > div:nth-child(1):hover {
+  background-color: lightgrey;
+  color: white;
+  cursor: pointer;
 }
-.quantity>div:nth-child(3):hover{
-    background-color: lightgrey;
-    color: white;
-    cursor: pointer;
+.quantity > div:nth-child(3):hover {
+  background-color: lightgrey;
+  color: white;
+  cursor: pointer;
 }
 
-.details{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 5px;
-    min-width: 250px;
+.details {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  min-width: 250px;
 }
 .rectangleBody {
-    width: 823px;
-    height: 809px;
-    border: solid 1px rgba(151, 151, 151, 0.1);
-    background-color: #ffffff;
+  width: 823px;
+  height: 809px;
+  border: solid 1px rgba(151, 151, 151, 0.1);
+  background-color: #ffffff;
 }
-.account{
-    color: grey;
-    flex-basis: 100%;
-    border-bottom: 2px solid lightgrey;
-    padding: 10px 10px 10px 5px;
-    margin-bottom: 5px;
+.account {
+  color: grey;
+  flex-basis: 100%;
+  border-bottom: 2px solid lightgrey;
+  padding: 10px 10px 10px 5px;
+  margin-bottom: 5px;
 }
-.button{
-    display: flex;
-    flex-basis: 100%;
-    padding: 15px;
-    justify-content: center;
+.button {
+  display: flex;
+  flex-basis: 100%;
+  padding: 5px;
+  justify-content: center;
 }
-.button > button{
-    padding: 10px 20px;
-    color: white;
-    cursor: pointer;
-    background-color: orange;
-    border-radius: 10px;
-    border: none;
+.button > button {
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+  background-color: orange;
+  border-radius: 10px;
+  border: none;
 }
-.quantity>div:first-child{
-    border: 1px solid lightgrey
+.quantity > div:first-child {
+  border: 1px solid lightgrey;
 }
-.quantity>div:nth-child(3){
-    border: 1px solid lightgrey
+.quantity > div:nth-child(3) {
+  border: 1px solid lightgrey;
 }
-@media(max-width: 950px) {
-    .left-content{
-        flex-basis: 80%;
-        margin: 0 auto;
-    }
-    .right-content{
-        margin: 10px auto;
-        flex-basis: 50%
-    }
+@media (max-width: 950px) {
+  .left-content {
+    flex-basis: 80%;
+    margin: 0 auto;
+  }
+  .right-content {
+    margin: 10px auto;
+    flex-basis: 50%;
+  }
 }
 
-@media(max-width: 750px) {
-    .details>div>div{
-        text-align: center;
-        margin: 3px;
-        flex-basis: 100%;
-    }
+@media (max-width: 750px) {
+  .details > div > div {
+    text-align: center;
+    margin: 3px;
+    flex-basis: 100%;
+  }
 }

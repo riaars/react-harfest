@@ -2,35 +2,37 @@ import React from 'react';
 import './profile.css';
 import PropTypes from 'prop-types';
 
-import {faPhone, faMailBulk} from '@fortawesome/free-solid-svg-icons';
+import {faPhone, faEnvelope, faHome} from '@fortawesome/free-solid-svg-icons';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 
 const Profile = props => (
   <React.Fragment>
     <div className="profile-container">
-      
-      <h2> Profile Page</h2>
+      <h2>My Profile</h2>
       <img
         className="profile-picture"
-        src="http://pngimg.com/uploads/spongebob/spongebob_PNG61.png"
+        src="https://static.thenounproject.com/png/538846-200.png"
       />
-      <h4 className>{props.name}</h4>
-      <h5 className>{props.location}</h5>
-      <br/>
+      <h4> Hey, I am {props.name}</h4>
+
+      <br />
       <span className="phone-number">
         <FontAwesomeIcon icon={faPhone} />
         {'  ' + props.phone}
-        <br />
       </span>
+      <br />
       <span className="mail">
-        <FontAwesomeIcon icon={faMailBulk} />
+        <FontAwesomeIcon icon={faEnvelope} />
         {'  ' + props.email}
       </span>
-
+      <br />
+      <span className="loc">
+        <FontAwesomeIcon icon={faHome} />
+        {'  ' + props.location}
+      </span>
       <br />
 
       <button className="btn-edit-profile">Edit Profile </button>
-      
     </div>
   </React.Fragment>
 );
@@ -43,7 +45,7 @@ Profile.propTypes = {
 };
 
 Profile.defaultProps = {
-  name: 'Spongebob',
+  name: 'John Doe',
   location: 'Jakarta, Indonesia',
   phone: '0816919867',
   email: 'riaratnasari@gmail.com',

@@ -20,3 +20,17 @@
   color: #e0be63;
   margin-right: 25px;
 }
+
+.navbar-menu {
+  background-color: white;
+  text-decoration: none;
+  color: white;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: 40px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}

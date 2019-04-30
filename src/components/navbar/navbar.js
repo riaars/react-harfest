@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import ToolBar from '@material-ui/core/Toolbar';
-import MenuIcon from '@material-ui/icons/Menu';
 import ProfileIcon from '@material-ui/icons/Person';
 import IconButton from '@material-ui/core/IconButton';
 import CartIcon from '@material-ui/icons/ShoppingBasket';
-
+import * as ROUTES from '../../constants/routes';
+import {Link} from 'react-router-dom';
 class navbar extends Component {
   state = {
     drawerOpen: false,
@@ -33,6 +33,7 @@ class navbar extends Component {
       drawerOpen: value,
     });
   };
+
   render() {
     return (
       <AppBar
@@ -49,18 +50,29 @@ class navbar extends Component {
               Adventure Experience in Farming
             </div>
           </div>
-          <IconButton
-            aria-label="Cart"
-            color="inherit"
-            onClick={() => this.toggleDrawer(true)}>
-            <CartIcon />
-          </IconButton>
-          <IconButton
+
+          <Link
+            textDecoration="none"
+            color="white"
             aria-label="Profile"
-            color="inherit"
-            onClick={() => this.toggleDrawer(true)}>
-            <ProfileIcon />
-          </IconButton>
+            to={ROUTES.CART}>
+            <CartIcon style={{color: 'ffffff'}} />
+          </Link>
+
+          <Link
+            textDecoration="none"
+            color="white"
+            aria-label="Profile"
+            to={ROUTES.PROFILE}>
+            <ProfileIcon
+              style={{
+                color: 'ffffff',
+                marginLeft: '30px',
+                marginRight: '30px',
+              }}
+              className="navbar-menu"
+            />
+          </Link>
         </ToolBar>
       </AppBar>
     );

@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import './style.css';
 import * as serviceWorker from './serviceWorker';
 import HomePage from './homepage/homepage';
 import Register from './register/register';
@@ -9,16 +10,15 @@ import History from './history/history';
 import Detail from './project_detail/project_detail';
 import Profile from './profile/profile';
 import Forgot from './forgotpassword/forgotpassword';
-import Cart from './cart/cart'
-import Summary from './payment_summary/payment_summary'
+import Cart from './cart/cart';
+import Summary from './payment_summary/payment_summary';
 import * as ROUTES from './constants/routes';
 import {BrowserRouter, Link, Route, Switch} from 'react-router-dom';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import Navbar from './components/navbar/navbar'
+import Navbar from './components/navbar/navbar';
 const TestComponent = props => {
   return (
     <React.Fragment>
-     
       <Link to={ROUTES.REGISTER}>Register page</Link>
       <br />
       <Link to={ROUTES.LOGIN}>Login page</Link>
@@ -42,15 +42,9 @@ const TestComponent = props => {
 };
 
 const AppBase = () => (
-  <React.Fragment>
+  <React.Fragment className="container">
     <Switch>
-      <Route
-        exact
-        path={ROUTES.LANDING}
-        render={() => (
-            <TestComponent />
-        )}
-      />
+      <Route exact path={ROUTES.LANDING} render={() => <TestComponent />} />
       <Route exact path={ROUTES.REGISTER} render={() => <Register />} />
       <Route exact path={ROUTES.LOGIN} render={() => <Login />} />
       <Route exact path={ROUTES.PROFILE} render={() => <Profile />} />
@@ -66,7 +60,7 @@ const AppBase = () => (
 
 ReactDOM.render(
   <BrowserRouter>
-    <Navbar/>
+    <Navbar />
     <AppBase />
   </BrowserRouter>,
   document.getElementById('root')

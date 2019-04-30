@@ -42,7 +42,7 @@ const TestComponent = props => {
 };
 
 const AppBase = () => (
-  <React.Fragment className="container">
+  <div className="container-body">
     <Switch>
       <Route exact path={ROUTES.LANDING} render={() => <TestComponent />} />
       <Route exact path={ROUTES.REGISTER} render={() => <Register />} />
@@ -55,7 +55,7 @@ const AppBase = () => (
       <Route exact path={ROUTES.CART} render={() => <Cart />} />
       <Route exact path={ROUTES.SUMMARY} render={() => <Summary />} />
     </Switch>
-  </React.Fragment>
+  </div>
 );
 
 ReactDOM.render(

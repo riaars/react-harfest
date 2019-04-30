@@ -1,7 +1,3 @@
-.register-container {
-  padding-top: 100px;
-}
-
 @media screen and (max-width: 760px) {
   .register-container {
     padding-left: 20px;
@@ -13,11 +9,16 @@
   .register-container {
     margin-left: auto;
     margin-right: auto;
-    width: 350px;
+    width: 400px;
   }
 }
 
 .white {
   color: white;
   background-color: #e0be63;
+}
+
+.center-item {
+  margin-left: auto;
+  margin-right: auto;
 }

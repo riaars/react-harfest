@@ -1,17 +1,17 @@
 import React from 'react';
 import './history.css';
 import PropTypes from 'prop-types';
-
+import * as ROUTES from '../constants/routes';
+import {Link} from 'react-router-dom';
 const History = props => {
   return (
     <React.Fragment>
-      <div className="history container">
+      <div className="history-container">
         <br />
         <h2>History Transaction</h2>
-        <br />
       </div>
       <br />
-      <div className="history container">
+      <div className="history-container">
         <img
           className="order-image"
           src="https://2.bp.blogspot.com/-0hwnwEwRwEE/WRo0WkSIwCI/AAAAAAAALlY/hNV5CmUoitgwc77ekL4EI7oK27dtuzZvACLcB/s1600/grape%2Bfarming%2BKenya.jpg"
@@ -32,13 +32,19 @@ const History = props => {
         />
         <span className="order-date">{props.date1}</span>
         <br />
-        <button className="btn_details">View Details</button>
+        <br />
+        <Link
+          className=" btn_details"
+          style={{textDecoration: 'none', color: '#ffffff'}}
+          to={ROUTES.PROJECT_DETAIL}>
+          View Details
+        </Link>
         <br />
         <br />
-        <hr className="Line" />
+        <hr className="line" />
         <br />
       </div>
-      <div className="history container">
+      <div className="history-container ">
         <img
           className="order-image"
           src="http://upload.evocdn.co.uk/fruitnet/uploads/asset_image/2_1202240_e.jpg"
@@ -59,10 +65,16 @@ const History = props => {
         />
         <span className="order-date">{props.date2}</span>
         <br />
-        <button className="btn_details">View Details</button>
+        <br />
+        <Link
+          className="btn_details"
+          style={{textDecoration: 'none', color: '#ffffff'}}
+          to={ROUTES.PROJECT_DETAIL}>
+          View Details
+        </Link>
         <br />
         <br />
-        <hr className="Line" />
+        <hr className="line" />
         <br />
       </div>
     </React.Fragment>

@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import './style.css';
-import * as serviceWorker from './serviceWorker';
 import HomePage from './homepage/homepage';
 import Register from './register/register';
 import Login from './login/login';
@@ -12,6 +11,7 @@ import Profile from './profile/profile';
 import Forgot from './forgotpassword/forgotpassword';
 import Cart from './cart/cart';
 import Summary from './payment_summary/payment_summary';
+import FARMHOMEPAGE from './farm_homepage/farm_homepage';
 import * as ROUTES from './constants/routes';
 import {BrowserRouter, Link, Route, Switch} from 'react-router-dom';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
@@ -37,6 +37,8 @@ const TestComponent = props => {
       <br />
       <Link to={ROUTES.SUMMARY}>Payment Summary</Link>
       <br />
+      <Link to={ROUTES.FARMHOMEPAGE}>Farm Homepage</Link>
+      <br />
     </React.Fragment>
   );
 };
@@ -54,6 +56,7 @@ const AppBase = () => (
       <Route exact path={ROUTES.ORDER_HISTORY} render={() => <History />} />
       <Route exact path={ROUTES.CART} render={() => <Cart />} />
       <Route exact path={ROUTES.SUMMARY} render={() => <Summary />} />
+      <Route exact path={ROUTES.FARMHOMEPAGE} render={() => <FARMHOMEPAGE />} />
     </Switch>
   </div>
 );
@@ -65,8 +68,3 @@ ReactDOM.render(
   </BrowserRouter>,
   document.getElementById('root')
 );
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();

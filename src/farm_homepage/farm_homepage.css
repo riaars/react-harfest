@@ -1,0 +1,107 @@
+.farm-homepage-container {
+  margin-top: 8px;
+}
+@media screen and (max-width: 768px) {
+  .farm-homepage-container {
+    margin-top: 10px;
+  }
+}
+
+.page-title {
+  font-size: 24px;
+  font-weight: bolder;
+  margin-left: 20px;
+}
+.page-header {
+  font-size: 18px;
+  margin-left: 20px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.list-item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.item {
+  width: 30%;
+  flex-grow: 1;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+@media screen and (max-width: 768px) {
+  .item {
+    width: 100%;
+    flex-grow: 1;
+  }
+}
+
+@media screen and (width: 768px) {
+  .item {
+    width: 50%;
+    flex-grow: 1;
+  }
+}
+.project-title {
+  text-align: center;
+}
+
+.project-description {
+  text-align: justify;
+  margin: 5px;
+}
+.space {
+  margin: 5px;
+  width: 160px;
+  text-align: center;
+}
+
+.edit-project {
+  padding: 5px;
+  margin-left: 10px;
+}
+.img-project-preview img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-location {
+  text-decoration: underline;
+}
+.published-since {
+  font-size: 12px;
+  text-align: left;
+  margin-left: 10px;
+}
+.project-criteria {
+  margin: 10px;
+  text-align: center;
+  border-bottom: 1px;
+  border-bottom-color: black;
+}
+
+.line {
+  height: 1px;
+  border-bottom: solid 0.5px rgba(151, 151, 151, 0.66);
+  margin: 10px;
+}
+
+.add-project {
+  height: 40px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  color: white;
+}
+
+.padding-left {
+  margin-left: 5px;
+}
+
+.project-actions {
+  text-align: left;
+}

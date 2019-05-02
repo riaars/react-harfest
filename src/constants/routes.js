@@ -8,3 +8,4 @@ export const PROJECT_DETAIL = '/detail';
 export const ORDER_HISTORY ='/history';
 export const CART ='/cart';
 export const SUMMARY ='/payment_summary';
+export const ADDPROJECT ='/addproject';

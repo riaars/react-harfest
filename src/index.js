@@ -12,7 +12,9 @@ import Profile from './profile/profile';
 import Forgot from './forgotpassword/forgotpassword';
 import Cart from './cart/cart';
 import Summary from './payment_summary/payment_summary';
+import AddProject from './addproject/addproject';
 import * as ROUTES from './constants/routes';
+import $ from 'jquery';
 import {BrowserRouter, Link, Route, Switch} from 'react-router-dom';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './components/navbar/navbar';
@@ -37,6 +39,8 @@ const TestComponent = props => {
       <br />
       <Link to={ROUTES.SUMMARY}>Payment Summary</Link>
       <br />
+      <Link to={ROUTES.ADDPROJECT}>AddProject</Link>
+      <br />
     </React.Fragment>
   );
 };
@@ -54,6 +58,7 @@ const AppBase = () => (
       <Route exact path={ROUTES.ORDER_HISTORY} render={() => <History />} />
       <Route exact path={ROUTES.CART} render={() => <Cart />} />
       <Route exact path={ROUTES.SUMMARY} render={() => <Summary />} />
+      <Route exact path={ROUTES.ADDPROJECT} render={() => <AddProject />} />
     </Switch>
   </div>
 );

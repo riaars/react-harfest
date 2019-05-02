@@ -38,7 +38,7 @@ class navbar extends Component {
       <AppBar
         position="fixed"
         style={{
-          backgroundColor: '#e0be63',
+          backgroundColor: '#28a745',
           boxShadow: 'none',
           padding: '10px 0px',
         }}>

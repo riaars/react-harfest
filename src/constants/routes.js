@@ -9,3 +9,4 @@ export const ORDER_HISTORY = '/history';
 export const CART = '/cart';
 export const SUMMARY = '/payment_summary';
 export const FARMHOMEPAGE = '/farm_homepage';
+export const TRANSACTION_LIST_FARMER = '/transaction_list_f';

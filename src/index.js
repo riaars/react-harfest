@@ -12,6 +12,7 @@ import Forgot from './forgotpassword/forgotpassword';
 import Cart from './cart/cart';
 import Summary from './payment_summary/payment_summary';
 import FARMHOMEPAGE from './farm_homepage/farm_homepage';
+import Transactionlistf from './transaction_list/transaction_list';
 import * as ROUTES from './constants/routes';
 import {BrowserRouter, Link, Route, Switch} from 'react-router-dom';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
@@ -39,6 +40,10 @@ const TestComponent = props => {
       <br />
       <Link to={ROUTES.FARMHOMEPAGE}>Farm Homepage</Link>
       <br />
+      <Link to={ROUTES.TRANSACTION_LIST_FARMER}>
+        Transaction List page (farmer)
+      </Link>
+      <br />
     </React.Fragment>
   );
 };
@@ -57,6 +62,11 @@ const AppBase = () => (
       <Route exact path={ROUTES.CART} render={() => <Cart />} />
       <Route exact path={ROUTES.SUMMARY} render={() => <Summary />} />
       <Route exact path={ROUTES.FARMHOMEPAGE} render={() => <FARMHOMEPAGE />} />
+      <Route
+        exact
+        path={ROUTES.TRANSACTION_LIST_FARMER}
+        render={() => <Transactionlistf />}
+      />
     </Switch>
   </div>
 );

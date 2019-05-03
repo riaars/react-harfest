@@ -1,0 +1,109 @@
+.ap-title {
+
+    font-family: LucidaGrande;
+    font-size: 15px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #4a4a4a;
+  }
+  .ap-select{
+    width:100%;
+    height: 42px;
+    border-radius: 2px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), inset 0 1px 0 0 #ffffff;
+    font-family: LucidaGrande;
+    font-size: 16px;
+    background-color: #ffffff
+
+  } 
+   #browse-select{
+
+    border-radius: 2px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), inset 0 1px 0 0 #ffffff;  
+    font-family: LucidaGrande;
+    font-size: 20px;
+
+  }
+  .btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    cursor: inherit;
+    display: block;
+}
+  #ap-col{
+    padding-left:0px;
+  }
+  #ap-input{   
+        border:none;  
+        border-bottom: #c0c0c0 1px solid; 
+        width:100%; 
+        font-family: LucidaGrande;
+        text-align:center;
+        height: 30px;
+    } 
+   #browse{
+    font-family: LucidaGrande;
+   }
+
+   #img-upload{
+     width:150px;
+   }
+   #imgHolder{
+     width:50%;
+     height:100%;
+   }
+  #caRow{
+    margin-top:0px;
+    padding-top:0px;
+  }
+   @media(min-width: 651px){
+    #ap-container{
+        width: 40%;
+      }   
+      .btn-add-project {
+        width: 200px;
+        height: 38px;
+        border-radius: 19px;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+        background-color: rgba(211, 163, 33, 0.7);
+        font-size: 14px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        align-items: center;
+        color: white;
+        margin-bottom:3%;
+      }
+   }
+   @media(max-width: 650px){
+    #ap-container{
+        width: 90%;
+      }   
+      .btn-add-project {
+        width: 100%;
+        height: 40px;
+        margin-bottom: 3%;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+        background-color: rgba(211, 163, 33, 0.7);
+        font-size: 15px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        align-items: center;
+        color: white;
+      }
+   }

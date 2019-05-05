@@ -1,20 +1,56 @@
+
+  @media screen and (min-width: 601px) {
+    .list-group {
+      font-size: 15px;
+      color: grey;
+    }
+  }
+  
+  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+  @media screen and (max-width: 600px) {
+    .list-group  {
+      font-size: 9px;    
+      color: grey;
+      font-weight: 400;
+    }
+  }
+
+  @media screen and (min-width: 601px) {
+    div.title {
+      font-size: 20px;
+    }
+  }
+  
+  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+  @media screen and (max-width: 600px) {
+    div.title {
+      font-size: 15px;
+    }
+  }
+.row {
+  width: 281px;
+  font-family: CorsivaHebrew;
+  font-size: 15px;
+  color: #e0be63;
+  width: 1024;
+  float: left;
+}
+
 .title {
   width: 281px;
   height: 25px;
   font-family: CorsivaHebrew;
   font-size: 20px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
   color: #e0be63;
-  padding-left: 71px;
+  padding-left: 71px; 
+  padding-top: 10px;
 }
 
 .imagez {
-  width: 1366px;
-  height: 424px;
+  width: 100%;
+  padding-left: 71px;
+  padding-right: 71px;
+  height: auto;
 }
 
 .btn_request {
@@ -24,31 +60,15 @@
   border-radius: 19px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
   background-color: rgba(211, 163, 33, 0.7);
-  margin-right: 2cm;
+  margin-right: 1cm;
   padding: 10px;
 }
-.location {
-  width: 30px;
-  height: 30px;
-  margin-left: 71px;
-}
-.duration {
-  width: 30px;
-  height: 30px;
-  margin-left: 71px;
-}
-.return {
-  width: 30px;
-  height: 30px;
-  margin-left: 71px;
-}
+
+
 .text {
-  display: inline-block;
-  width: 376px;
-  height: 20px;
   font-family: AvenirNext;
-  text-indent: 0.5cm;
   color: grey;
+  text-align: left;
 }
 .description {
   width: 1024;
@@ -58,3 +78,8 @@
   padding-left: 71px;
   padding-right: 71px;
 }
+.detail-container{
+  margin-top: 8px;
+  margin-bottom: 50px;
+}
+

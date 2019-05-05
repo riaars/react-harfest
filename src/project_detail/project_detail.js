@@ -2,62 +2,39 @@ import React from 'react';
 import './project_detail.css';
 import * as ROUTES from '../constants/routes';
 import {Link} from 'react-router-dom';
+
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faCalendar, faMapMarkerAlt, faHistory, faDollarSign} from '@fortawesome/free-solid-svg-icons';
+
 const Detail = props => {
   return (
     <React.Fragment>
-      <h1> Detail Page</h1>
-      <br />
-      <br />
+    <div class="detail-container">
       <img
         className="imagez"
         alt="image1"
         src="https://www.radionz.co.nz/assets/news/55507/eight_col_Cows_in_paddock_generic_16x10.jpg?1450035263.jpg"
       />
-      <br />
-      <br />
-      <h6 className="title">Cattle Farm New Zealand</h6>
-      <br />
-      <br />
-      <img
-        className="location"
-        alt="icon-location"
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcCMyDxRrLtgdRCRZvbo35vkKtK2MF5P3y_Scn4YgHvF0OxsHD9Q"
-      />
-      <div class="text">
-        <p>
-          {' '}
-          Location &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          &nbsp;&nbsp;&nbsp;&nbsp;
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Wellington
-        </p>
-      </div>
-      <br />
-      <br />
-      <img
-        className="duration"
-        alt="icon-duration"
-        src="https://support.apple.com/library/content/dam/edam/applecare/images/en_US/il/time-machine-nav-button.png"
-      />
-      <div class="text">
-        <p>
-          Duration
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3 Weeks
-        </p>
-      </div>
-      <br />
-      <br />
-      <img
-        className="return"
-        alt="icon-return"
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEXYJ1ErmNco2w2l2BPjfwwI2czhndYREDaA_G1IA4WJPzA1Lq"
-      />
-      <div class="text">
-        <p>Price &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 2000 SEK</p>
-      </div>
-      <br />
-      <br />
+      <div class="title" >Cattle Farm New Zealand</div>
+      <br>
+      </br>
+        <ul class="list-group" style={{marginRight: '71px', marginLeft: '71px'}}>
+          <li class="list-group-item"> <FontAwesomeIcon
+              style={{marginRight: '20px'}}
+              icon={faMapMarkerAlt}
+          />Location      &emsp; &emsp;       Wellington</li>
+          <li class="list-group-item"> <FontAwesomeIcon
+              style={{marginRight: '17px'}}
+              icon={faHistory}
+          />Duration &emsp; &emsp;   3 Weeks</li>
+          <li class="list-group-item"> <FontAwesomeIcon
+              style={{marginRight: '20px'}}
+              icon={faDollarSign}
+          /> Price &emsp; &emsp;  &emsp;  2000 kr</li>          
+        </ul>
+        <br></br>
       <div class="description">
+         
         <p>
           New Zealand is the world’s 8th largest milk producer, with more than 4
           million dairy cows producing over 15 billion litres of milk annually.
@@ -74,18 +51,19 @@ const Detail = props => {
           products, including whole milk, cream, butter, cheese, milk powder and
           buttermilk.{' '}
         </p>
+        <div align="right">
+          <Link
+            className="btn_request"
+            style={{textDecoration: 'none', color: '#ffffff'}}
+            to={ROUTES.CART}>
+            Book Now
+          </Link>
+          {/* <button className = 'btn_request' >Book Now </button> */}
+        </div>
       </div>
-      <div align="right">
-        <Link
-          className="btn_request"
-          style={{textDecoration: 'none', color: '#ffffff'}}
-          to={ROUTES.CART}>
-          Book Now
-        </Link>
-        {/* <button className = 'btn_request' >Book Now </button> */}
-      </div>
-      <br />
-      <br />
+      
+    </div>
+      
     </React.Fragment>
   );
 };

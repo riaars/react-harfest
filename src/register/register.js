@@ -14,7 +14,7 @@ const Register = props => {
   return (
     <React.Fragment>
       <div className="register-container">
-        <h2 className="center-item"> Start Using PlantMoney</h2>
+        <h2 className="center-item"> Start Using HarvestHaven</h2>
         <br />
         <form>
           <div className="form-group">

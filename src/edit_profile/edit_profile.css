@@ -1,0 +1,25 @@
+@media screen and (max-width: 760px) {
+    .edit-container {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .edit-container {
+      margin-left: auto;
+      margin-right: auto;
+      width: 500px;
+    }
+  }
+  
+  .white {
+    color: white;
+    background-color: #e0be63;
+  }
+  
+  .center-item {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  

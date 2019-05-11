@@ -12,3 +12,4 @@ export const SUMMARY = '/payment_summary';
 export const FARMHOMEPAGE = '/farm_homepage';
 export const TRANSACTION_LIST_FARMER = '/transaction_list_f';
 export const TESTCOMPONENT = '/test';
+export const EDIT_PROFILE = '/edit_profile';

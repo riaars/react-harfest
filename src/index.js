@@ -4,6 +4,7 @@ import './index.css';
 import './style.css';
 import HomePage from './homepage/homepage';
 import Register from './register/register';
+import EditProfile from './edit_profile/edit_profile';
 import Login from './login/login';
 import History from './history/history';
 import Detail from './project_detail/project_detail';
@@ -51,6 +52,8 @@ const TestComponent = props => {
         Transaction List page (farmer)
       </Link>
       <br />
+      <Link to={ROUTES.EDIT_PROFILE}>Edit Profile</Link>
+      <br />
     </React.Fragment>
   );
 };
@@ -75,6 +78,7 @@ const AppBase = () => (
       <Route exact path={ROUTES.SUMMARY} render={() => <Summary />} />
       <Route exact path={ROUTES.ADDPROJECT} render={() => <AddProject />} />
       <Route exact path={ROUTES.FARMHOMEPAGE} render={() => <FARMHOMEPAGE />} />
+      <Route exact path={ROUTES.EDIT_PROFILE} render={() => <EditProfile />} />
       <Route
         exact
         path={ROUTES.TRANSACTION_LIST_FARMER}

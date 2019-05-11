@@ -46,7 +46,7 @@ class navbar extends Component {
           <div className="header_logo">
             <Link
               style={{textDecoration: 'none', color: '#ffffff'}}
-              to={ROUTES.HOMEPAGE}
+              to={ROUTES.TESTCOMPONENT}
               className="btn-homepage btn-logo">
               <div className="font_righteous header_logo_venue">
                 HarvestHaven

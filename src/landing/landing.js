@@ -8,7 +8,7 @@ const LandingPage = props => (
     <div className="home-page-banner">
       <div className="home-banner-txt-container">
         <div className="inner">
-          <h1>Why should you join Harvest Haven</h1>
+          <h2>Why should you join Harvest Haven</h2>
 
           <div className="inner-content">
             Harvest Haven is one of the world's farming tourism platforms. It

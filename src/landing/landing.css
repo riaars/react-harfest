@@ -26,7 +26,7 @@
 
 .home-img-banner {
   z-index: -1;
-  height: 400px;
+  height: 300px;
   width: 500px;
   margin-left: auto;
   background-color: white;
@@ -47,7 +47,7 @@
 .home-banner-txt-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: left;
 }
 @media screen and (max-width: 767px) {
   .home-banner-txt-container {
@@ -61,42 +61,52 @@
 }
 
 .inner-content {
-  text-align: left;
+  text-align: justify;
+  width: 80%;
+  margin-bottom: 20px;
 }
-
+@media screen and (max-width: 768px) {
+  .inner-content {
+    width: 100%;
+  }
+}
 h1 {
-  font-size: 20px;
+  font-size: 16px;
   margin-top: 0;
   text-align: left;
 }
 @media screen and (max-width: 768px) {
   h1 {
-    font-size: 36px;
+    font-size: 6px;
   }
 }
 
 .banner-buttons {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  @include media-breakpoint(sm) {
-    flex-direction: column;
-  }
+  justify-content: left;
+  align-items: left;
 }
 
 .btn-homepage {
-  width: 100%;
+  width: 40%;
   height: 40px;
   box-shadow: none;
   position: relative;
   font-weight: 400;
   font-size: 17px;
+  margin-bottom: 5px;
   bottom: auto;
-  right: auto;
-  align-self: center;
+  left: 0;
+  align-self: left;
   text-decoration: none;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .btn-homepage {
+    width: 100%;
+  }
 }
 
 .homepage-cards {
@@ -112,7 +122,6 @@ h1 {
   box-shadow: 1px 1px 4px 0 #9b9b9b;
   background-color: #ffffff;
   width: 23%;
-
   height: 200px;
   margin: 0px 5px 10px;
 }

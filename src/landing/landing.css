@@ -1,0 +1,179 @@
+.landingpage-container {
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+@media screen and (max-width: 767px) {
+  .landingpage-container {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+.home-page-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-bottom: 12px;
+}
+@media screen and (min-width: 767px) {
+  .home-page-banner {
+    flex-direction: row;
+    padding-bottom: 24px;
+  }
+}
+
+.home-img-banner {
+  z-index: -1;
+  height: 400px;
+  width: 500px;
+  margin-left: auto;
+  background-color: white;
+  margin-top: -10px;
+  margin-right: 0px;
+}
+@media screen and (min-width: 767px) {
+  .home-img-banner {
+    width: 500px;
+    height: 400px;
+    position: relative;
+    right: 0;
+    margin-top: 0;
+    margin-right: auto;
+  }
+}
+
+.home-banner-txt-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media screen and (max-width: 767px) {
+  .home-banner-txt-container {
+    float: left;
+  }
+}
+
+.inner {
+  border-radius: 4px;
+  border-color: #f5a623;
+}
+
+.inner-content {
+  text-align: left;
+}
+
+h1 {
+  font-size: 20px;
+  margin-top: 0;
+  text-align: left;
+}
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 36px;
+  }
+}
+
+.banner-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @include media-breakpoint(sm) {
+    flex-direction: column;
+  }
+}
+
+.btn-homepage {
+  width: 100%;
+  height: 40px;
+  box-shadow: none;
+  position: relative;
+  font-weight: 400;
+  font-size: 17px;
+  bottom: auto;
+  right: auto;
+  align-self: center;
+  text-decoration: none;
+}
+
+.homepage-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+}
+
+.inner-card {
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 1px 1px 4px 0 #9b9b9b;
+  background-color: #ffffff;
+  width: 23%;
+
+  height: 200px;
+  margin: 0px 5px 10px;
+}
+@media screen and (max-width: 768px) {
+  .inner-card {
+    width: 80%;
+    height: 200px;
+    margin: 0 0 20px;
+  }
+}
+
+span {
+  font-size: 14px;
+}
+.line-break {
+  margin-bottom: 12px;
+  color: #9b9b9b;
+}
+
+.how-it-works-container {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .how-it-works-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+.how-it-works {
+  text-align: justify;
+  padding: 0 0 20px;
+  width: 60%;
+}
+
+@media screen and (max-width: 767px) {
+  .how-it-works {
+    width: 100%;
+  }
+}
+
+.header-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+
+.mockup-platform {
+  justify-content: center;
+  width: 40%;
+}
+
+.title-section {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.btn-logo {
+  text-decoration: none;
+}

@@ -45,11 +45,13 @@ header .header_logo {
 }
 header .header_logo_venue {
   font-size: 30px;
+  color: white;
 }
 
 header .header_logo_title {
   text-transform: uppercase;
   font-size: 14px;
+  color: white;
 }
 
 /*====================

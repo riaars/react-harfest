@@ -7,6 +7,8 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import './homepage.css';
+import {Link} from 'react-router-dom';
+import * as ROUTES from '../constants/routes';
 const HomePage = props => {
   return (
     <React.Fragment>
@@ -79,56 +81,75 @@ const HomePage = props => {
         </div>
         <div class="row">
           <div class="card-deck" id="project-group">
-            <div class="card" id="foru-card">
-              <img
-                class="card-img-top"
-                src="https://www.radionz.co.nz/assets/news/55507/eight_col_Cows_in_paddock_generic_16x10.jpg?1450035263.jpg"
-                alt="cap4"
-              />
-              <div class="card-body">
-                <h5 class="card-title" id="projectcard-title">
-                  Card title
-                </h5>
-                <p class="card-text" id="projectcard-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </div>
-            </div>
+            <Link
+              style={{
+                textDecoration: 'none',
+              }}
+              to={ROUTES.PROJECT_DETAIL}>
+              <div class="card" id="foru-card">
+                <img
+                  class="card-img-top"
+                  src="https://www.radionz.co.nz/assets/news/55507/eight_col_Cows_in_paddock_generic_16x10.jpg?1450035263.jpg"
+                  alt="cap4"
+                />
 
-            <div class="card" id="foru-card">
-              <img
-                class="card-img-top"
-                src="https://www.radionz.co.nz/assets/news/55507/eight_col_Cows_in_paddock_generic_16x10.jpg?1450035263.jpg"
-                alt="cap5"
-              />
-              <div class="card-body">
-                <h5 class="card-title" id="projectcard-title">
-                  Card title
-                </h5>
-                <p class="card-text" id="projectcard-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
+                <div class="card-body">
+                  <h5 class="card-title" id="projectcard-title">
+                    Card title
+                  </h5>
+                  <p class="card-text" id="projectcard-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
               </div>
-            </div>
+            </Link>
 
-            <div class="card" id="foru-card">
-              <img
-                class="card-img-top"
-                src="https://www.radionz.co.nz/assets/news/55507/eight_col_Cows_in_paddock_generic_16x10.jpg?1450035263.jpg"
-                alt="cap6"
-              />
-              <div class="card-body">
-                <h5 class="card-title" id="projectcard-title">
-                  Card title
-                </h5>
-                <p class="card-text" id="projectcard-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
+            <Link
+              style={{
+                textDecoration: 'none',
+              }}
+              to={ROUTES.PROJECT_DETAIL}>
+              <div class="card" id="foru-card">
+                <img
+                  class="card-img-top"
+                  src="https://www.radionz.co.nz/assets/news/55507/eight_col_Cows_in_paddock_generic_16x10.jpg?1450035263.jpg"
+                  alt="cap5"
+                />
+
+                <div class="card-body">
+                  <h5 class="card-title" id="projectcard-title">
+                    Card title
+                  </h5>
+                  <p class="card-text" id="projectcard-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
               </div>
-            </div>
+            </Link>
+            <Link
+              style={{
+                textDecoration: 'none',
+              }}
+              to={ROUTES.PROJECT_DETAIL}>
+              <div class="card" id="foru-card">
+                <img
+                  class="card-img-top"
+                  src="https://www.radionz.co.nz/assets/news/55507/eight_col_Cows_in_paddock_generic_16x10.jpg?1450035263.jpg"
+                  alt="cap6"
+                />
+                <div class="card-body">
+                  <h5 class="card-title" id="projectcard-title">
+                    Card title
+                  </h5>
+                  <p class="card-text" id="projectcard-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </Link>
           </div>
         </div>
         <div class="row">

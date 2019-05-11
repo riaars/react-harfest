@@ -14,6 +14,7 @@ import Summary from './payment_summary/payment_summary';
 import AddProject from './addproject/addproject';
 import FARMHOMEPAGE from './farm_homepage/farm_homepage';
 import Transactionlistf from './transaction_list/transaction_list';
+import LandingPage from './landing/landing';
 import * as ROUTES from './constants/routes';
 import $ from 'jquery';
 import {BrowserRouter, Link, Route, Switch} from 'react-router-dom';
@@ -22,6 +23,8 @@ import Navbar from './components/navbar/navbar';
 const TestComponent = props => {
   return (
     <React.Fragment>
+      <Link to={ROUTES.LANDING}>Landing Page</Link>
+      <br />
       <Link to={ROUTES.REGISTER}>Register page</Link>
       <br />
       <Link to={ROUTES.LOGIN}>Login page</Link>
@@ -41,7 +44,7 @@ const TestComponent = props => {
       <Link to={ROUTES.SUMMARY}>Payment Summary</Link>
       <br />
       <Link to={ROUTES.ADDPROJECT}>AddProject</Link>
-    <br />
+      <br />
       <Link to={ROUTES.FARMHOMEPAGE}>Farm Homepage</Link>
       <br />
       <Link to={ROUTES.TRANSACTION_LIST_FARMER}>
@@ -55,7 +58,12 @@ const TestComponent = props => {
 const AppBase = () => (
   <div className="container-body">
     <Switch>
-      <Route exact path={ROUTES.LANDING} render={() => <TestComponent />} />
+      <Route
+        exact
+        path={ROUTES.TESTCOMPONENT}
+        render={() => <TestComponent />}
+      />
+      <Route exact path={ROUTES.LANDING} render={() => <LandingPage />} />
       <Route exact path={ROUTES.REGISTER} render={() => <Register />} />
       <Route exact path={ROUTES.LOGIN} render={() => <Login />} />
       <Route exact path={ROUTES.PROFILE} render={() => <Profile />} />

@@ -28,9 +28,9 @@
 .btn-edit-profile {
   width: 100px;
   height: 35px;
-  border-radius: 19px;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-  background-color: rgba(211, 163, 33, 0.7);
+  border-radius: 20px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.5);
+  background-color: #28a745;
   font-size: 12px;
   text-align: center;
   display: flex;

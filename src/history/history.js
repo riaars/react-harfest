@@ -43,7 +43,7 @@ const History = props => {
         <Link
           className="btn_details"
           style={{textDecoration: 'none', color: '#ffffff'}}
-          to={ROUTES.PROJECT_DETAIL}>
+          to={ROUTES.SUMMARY}>
           Make a Payment
         </Link>
         <br />

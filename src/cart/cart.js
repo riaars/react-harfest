@@ -102,7 +102,7 @@ class Cart extends Component {
                 {'+'}
               </button>
             </div>
-            <div className="price-event">${items.price}</div>
+            <div className="price-event">${items.price * items.quantity}</div>
           </div>
         </div>
       </div>

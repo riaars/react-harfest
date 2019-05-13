@@ -1,71 +1,118 @@
-import React from 'react';
+import React, {Component} from 'react';
 import './project_detail.css';
 import * as ROUTES from '../constants/routes';
 import {Link} from 'react-router-dom';
 
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faCalendar, faMapMarkerAlt, faHistory, faDollarSign} from '@fortawesome/free-solid-svg-icons';
+import {
+  faCalendar,
+  faMapMarkerAlt,
+  faHistory,
+  faDollarSign,
+} from '@fortawesome/free-solid-svg-icons';
 
-const Detail = props => {
-  return (
-    <React.Fragment>
-    <div class="detail-container">
-      <img
-        className="imagez"
-        alt="image1"
-        src="https://www.radionz.co.nz/assets/news/55507/eight_col_Cows_in_paddock_generic_16x10.jpg?1450035263.jpg"
-      />
-      <div class="title" >Cattle Farm New Zealand</div>
-      <br>
-      </br>
-        <ul class="list-group" style={{marginRight: '71px', marginLeft: '71px'}}>
-          <li class="list-group-item"> <FontAwesomeIcon
-              style={{marginRight: '20px'}}
-              icon={faMapMarkerAlt}
-          />Location      &emsp; &emsp;       Wellington</li>
-          <li class="list-group-item"> <FontAwesomeIcon
-              style={{marginRight: '17px'}}
-              icon={faHistory}
-          />Duration &emsp; &emsp;   3 Weeks</li>
-          <li class="list-group-item"> <FontAwesomeIcon
-              style={{marginRight: '20px'}}
-              icon={faDollarSign}
-          /> Price &emsp; &emsp;  &emsp;  2000 kr</li>          
-        </ul>
-        <br></br>
-      <div class="description">
-         
-        <p>
-          New Zealand is the world’s 8th largest milk producer, with more than 4
-          million dairy cows producing over 15 billion litres of milk annually.
-          The main areas for dairy farming in New Zealand are the Waikato,
-          Taranaki, Southland, Northland, Horowhenua, Manawatu and Westland
-          regions. The main breeds of dairy cows in New Zealand are
-          Holstein-Friesian, Jersey and Ayrshire as well as the more recently
-          bred KiwiCross. Livestock is mainly grass-fed. The first
-          milk-processing factories opened in the 1880s and the first milking
-          machines were introduced in 1893. By 1920 there were 600 factories
-          around New Zealand. Today our largest dairy company is Fonterra, a
-          co-operative owned by 11,000 farmers, which supplies around 95% of New
-          Zealand’s milk.Today New Zealand produces more than 100 types of dairy
-          products, including whole milk, cream, butter, cheese, milk powder and
-          buttermilk.{' '}
-        </p>
-        <div align="right">
-          <Link
-            className="btn_request"
-            style={{textDecoration: 'none', color: '#ffffff'}}
-            to={ROUTES.CART}>
-            Book Now
-          </Link>
-          {/* <button className = 'btn_request' >Book Now </button> */}
+class Detail extends Component {
+  state = {
+    title: ['Strawberries picking in Queensland'],
+    date: ['12-20 April 2019'],
+    location: ['St. Marry John Park'],
+    img_url: [
+      'https://www.onedaykorea.com/wp-content/uploads/2015/04/one-day-korea-korean-strawberry-picking-tour.jpg',
+    ],
+    description: [
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non tempor tortor. Cras sagittis lectus eros, quis congue eros volutpat id. Sed rhoncus est ut congue mollis. Pellentesque dui sapien, sodales vel sapien non, euismod luctus dui. Quisque convallis odio id sapien faucibus, vel auctor leo rutrum. Cras porta tortor ac metus ultricies pretium. Nam convallis justo elit. Etiam sit amet porta mauris. Proin luctus at metus gravida interdum. Ut orci velit, sodales id arcu at, dignissim malesuada erat. Nunc viverra euismod ante, vel efficitur metus facilisis non. Nullam ipsum diam, vehicula sit amet ultricies malesuada, posuere nec lectus. Curabitur tempor arcu nec ligula gravida maximus. Vestibulum viverra lorem ac massa ornare, quis vulputate orci sodales.',
+    ],
+    price: ['$150'],
+    quota: ['2 people'],
+    packs: [100],
+    hours: [6],
+    insurance: ['No'],
+    discount: [5],
+    published_date: ['12 April 2019'],
+  };
+
+  showProject = () =>
+    this.state.title.map((project, i) => (
+      <div className="item">
+        <div className="row">
+          <div className="img-project-detail">
+            <img src={this.state.img_url[i]} />
+          </div>
+          <div>
+            <div className="project-time-venue">
+              <div className="project-date">
+                <div className="padding-left">
+                  <FontAwesomeIcon
+                    style={{marginRight: '10px'}}
+                    icon={faCalendar}
+                  />
+                  {this.state.date[i]}
+                </div>
+              </div>
+
+              <div className="project-location">
+                <div className="padding-left">
+                  <FontAwesomeIcon
+                    style={{marginRight: '10px'}}
+                    icon={faMapMarkerAlt}
+                  />
+                  {this.state.location[i]}
+                </div>
+              </div>
+            </div>
+            <div className="project-criteria">
+              <div>
+                <div className="sp btn btn-outline-success disabled">
+                  {this.state.price[i]}
+                </div>
+                <div className="sp btn btn-outline-success disabled">
+                  {this.state.quota[i]}
+                </div>
+                <div className="sp btn btn-outline-success disabled">
+                  {this.state.packs[i]} per day
+                </div>
+              </div>
+              <div>
+                <div className="sp btn btn-outline-success disabled">
+                  {this.state.hours[i]} hours
+                </div>
+
+                <div className="sp btn btn-secondary disabled">
+                  {this.state.insurance[i]} Insurance
+                </div>
+                <div className="sp btn btn-outline-success disabled">
+                  {this.state.discount[i]}% OFF
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div />
+        </div>
+
+        <div className="project-description">
+          <h5>Description</h5>
+          {this.state.description[i]}
+        </div>
+
+        <div className="line" />
+        <div className="published-since">
+          Published since {this.state.published_date[i]}
         </div>
       </div>
-      
-    </div>
-      
-    </React.Fragment>
-  );
-};
+    ));
+
+  render() {
+    return (
+      <div className="detail-container">
+        <div className="page-title">{this.state.title}</div>
+        <div className="list-item"> {this.showProject()}</div>
+        <Link to={ROUTES.CART}>
+          <div className="add-project btn btn-success">Book Event</div>
+        </Link>
+      </div>
+    );
+  }
+}
 
 export default Detail;

@@ -121,7 +121,7 @@ class Summary extends Component {
           className="btn_details"
           style={{textDecoration: 'none', color: '#ffffff'}}
           to={ROUTES.ORDER_HISTORY}>
-          Make a Payment
+          Proceed
         </Link>
       </div>
     );

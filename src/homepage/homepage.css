@@ -26,15 +26,12 @@
     border-radius: 10px;
     box-shadow: 1px 1px 4px 0 #9b9b9b;
     background-color: #ffffff;
+    margin: 20px;
   }
   #categories-text {
     text-align: center;
     font-family: Helvetica;
     font-size: 9px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
     letter-spacing: -0.2px;
     text-align: center;
     color: #4a4a4a;
@@ -43,31 +40,16 @@
   #title-text {
     font-family: LucidaGrande;
     font-size: 16px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
     color: #4a4a4a;
   }
   #projectcard-title {
     font-family: LucidaGrande;
-    font-size: 13px;
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #d3a321;
+    font-size: 15px;
+    color: #4a4a4a;
   }
   #projectcard-text {
     font-family: AvenirNext;
     font-size: 11px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
     text-align: justify;
     color: #4a4a4a;
   }
@@ -120,16 +102,6 @@
     color: white;
     margin-left: 40%;
   }
-
-  .card {
-    margin-right: 20px;
-    margin-left: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-  .row {
-    margin-top: 10px;
-  }
 }
 
 @media (max-width: 650px) {
@@ -177,10 +149,6 @@
     text-align: center;
     font-family: Helvetica;
     font-size: 9px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
     letter-spacing: -0.2px;
     text-align: center;
     color: #4a4a4a;
@@ -188,31 +156,12 @@
   #title-text {
     font-family: LucidaGrande;
     font-size: 16px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
     color: #4a4a4a;
   }
-  #projectcard-title {
-    font-family: LucidaGrande;
-    font-size: 13px;
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #d3a321;
-  }
+
   #projectcard-text {
     font-family: AvenirNext;
     font-size: 11px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
     text-align: justify;
     color: #4a4a4a;
   }
@@ -239,10 +188,11 @@
     color: white;
   }
   #foru-card {
-    width: 98%;
+    width: 100%;
     border-radius: 10px;
     box-shadow: 1px 1px 4px 0 #9b9b9b;
     background-color: #ffffff;
+    margin: 20px;
   }
   #categories-card {
     width: 8rem;
@@ -260,4 +210,26 @@
   .row {
     margin-top: 10px;
   }
+}
+
+.btn-view-detail {
+  border-color: #28a745;
+  border-radius: 10px;
+  color: #28a745;
+  width: 100px;
+  align-items: flex-end;
+  margin-top: 10px;
+  margin-left: 100%;
+}
+
+.qty-event {
+  color: #4a4a4a;
+  font-size: 12px;
+  margin-top: 7px;
+  margin-left: 12px;
+}
+
+.card-left {
+  left: 0;
+  margin-left: 20px;
 }

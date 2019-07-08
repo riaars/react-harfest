@@ -1,2 +1,2 @@
-# PlantMoney 
-A web application investment platform for agriculture
+# Harvest Haven
+A web application for booking agritourism experience

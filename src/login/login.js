@@ -35,16 +35,20 @@ const Login = props => {
               placeholder="Password"
             />
           </div>
-
+          <Link
+            className="forgot-pw"
+            style={{color: '#000000'}}
+            to={ROUTES.FORGOT_PASSWORD}>
+            Forgot Password?
+          </Link>
+          <br />
           <br />
           <div className="center-item">
             <button className="btn-style">Login</button>
           </div>
         </form>
         <div className="center-item">
-          <br />
           OR
-          <br />
           <br />
           <Button
             className="btn btn-primary btn-auth btn-facebook"

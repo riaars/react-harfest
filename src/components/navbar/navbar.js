@@ -44,10 +44,17 @@ class navbar extends Component {
         }}>
         <ToolBar>
           <div className="header_logo">
-            <div className="font_righteous header_logo_venue">PlantMoney</div>
-            <div className="header_logo_title">
-              Adventure Experience in Farming
-            </div>
+            <Link
+              style={{textDecoration: 'none', color: '#ffffff'}}
+              to={ROUTES.TESTCOMPONENT}
+              className="btn-homepage btn-logo">
+              <div className="font_righteous header_logo_venue">
+                HarvestHaven
+              </div>
+              <div className="header_logo_title">
+                Adventure Experience in Farming
+              </div>
+            </Link>
           </div>
 
           <Link

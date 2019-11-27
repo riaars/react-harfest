@@ -1,55 +1,44 @@
+@media screen and (min-width: 601px) {
+  .list-group {
+    font-size: 15px;
+    color: grey;
+  }
+}
 
-  @media screen and (min-width: 601px) {
-    .list-group {
-      font-size: 15px;
-      color: grey;
-    }
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  .list-group {
+    font-size: 9px;
+    color: grey;
+    font-weight: 400;
   }
-  
-  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
-  @media screen and (max-width: 600px) {
-    .list-group  {
-      font-size: 9px;    
-      color: grey;
-      font-weight: 400;
-    }
-  }
+}
 
-  @media screen and (min-width: 601px) {
-    div.title {
-      font-size: 20px;
-    }
+@media screen and (min-width: 601px) {
+  div.title {
+    font-size: 20px;
   }
-  
-  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
-  @media screen and (max-width: 600px) {
-    div.title {
-      font-size: 15px;
-    }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  div.title {
+    font-size: 15px;
   }
-.row {
-  width: 281px;
-  font-family: CorsivaHebrew;
-  font-size: 15px;
-  color: #e0be63;
-  width: 1024;
-  float: left;
 }
 
 .title {
-  width: 281px;
   height: 25px;
   font-family: CorsivaHebrew;
   font-size: 20px;
-  color: #e0be63;
-  padding-left: 71px; 
+  color: #4a4a4a;
+  padding-left: 71px;
   padding-top: 10px;
 }
 
 .imagez {
-  width: 100%;
-  padding-left: 71px;
-  padding-right: 71px;
+  width: 40%;
+  max-width: 300px;
   height: auto;
 }
 
@@ -64,7 +53,6 @@
   padding: 10px;
 }
 
-
 .text {
   font-family: AvenirNext;
   color: grey;
@@ -78,8 +66,28 @@
   padding-left: 71px;
   padding-right: 71px;
 }
-.detail-container{
+.detail-container {
   margin-top: 8px;
   margin-bottom: 50px;
 }
 
+.detail-container {
+  margin-left: 250px;
+  margin-right: 250px;
+}
+
+@media screen and (max-width: 600px) {
+  .detail-container {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+.img-project-detail {
+  margin: 15px;
+  max-width: 400px;
+}
+
+.sp {
+  margin: 5px;
+}
